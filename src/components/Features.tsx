@@ -54,11 +54,7 @@ export const Features = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-foreground mb-4">{feature.title}</h3>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">{feature.description}</p>
-                    <Button variant="feature" className="group/btn">
-                      Learn More
-                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
+                    <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
                   </div>
                 </div>
               </Card>
