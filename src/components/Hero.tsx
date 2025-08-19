@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Download, QrCode } from "lucide-react";
+import { Download } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -17,10 +17,12 @@ export const Hero = () => {
               Empower deaf and mute students with UniSign - the revolutionary app that makes sign language accessible through AI-powered learning, 3D models, and interactive experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-                <Download className="mr-2" />
-                Download UniSign
-              </Button>
+              <Link to="/qr-code">
+                <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+                  <Download className="mr-2" />
+                  Download UniSign
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20">
                 Learn More
               </Button>
@@ -35,15 +37,6 @@ export const Hero = () => {
                 className="w-full h-auto rounded-2xl shadow-hero"
               />
             </div>
-            
-            {/* QR Code Card */}
-            <Card className="absolute -bottom-6 -right-6 lg:-right-12 p-6 gradient-card shadow-card">
-              <div className="text-center">
-                <QrCode className="w-16 h-16 mx-auto mb-3 text-primary" />
-                <p className="text-sm font-medium text-foreground">Scan to Download</p>
-                <p className="text-xs text-muted-foreground">Available on all platforms</p>
-              </div>
-            </Card>
           </div>
         </div>
       </div>

@@ -13,7 +13,6 @@ export const Navigation = () => {
     { name: "About", path: "/about" },
     { name: "Features", path: "/features" },
     { name: "How It Works", path: "/how-it-works" },
-    { name: "Download", path: "/download" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -43,9 +42,6 @@ export const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button variant="default" size="sm">
-              Get Started
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -76,11 +72,6 @@ export const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-3 pt-2">
-                <Button variant="default" size="sm" className="w-full">
-                  Get Started
-                </Button>
-              </div>
             </div>
           </div>
         )}

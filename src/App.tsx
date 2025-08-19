@@ -8,6 +8,8 @@ import About from "./pages/About";
 import Features from "./pages/Features";
 import HowItWorks from "./pages/HowItWorks";
 import Download from "./pages/Download";
+import QRCode from "./pages/QRCode";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/features" element={<Features />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/download" element={<Download />} />
+          <Route path="/qr-code" element={<QRCode />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

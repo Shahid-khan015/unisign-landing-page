@@ -42,10 +42,10 @@ const Index = () => {
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <Download className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-3">Get Started Today</h3>
-              <p className="text-muted-foreground mb-4">Available soon - scan QR code to be notified</p>
-              <Link to="/download">
+              <p className="text-muted-foreground mb-4">Scan QR code to download UniSign instantly</p>
+              <Link to="/qr-code">
                 <Button variant="outline" size="sm" className="group">
-                  Download Info <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  Download Now <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
             </Card>

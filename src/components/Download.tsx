@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download as DownloadIcon, Smartphone, QrCode, Apple, PlayIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Download = () => {
   return (
@@ -16,74 +17,78 @@ export const Download = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 items-center">
-          <div className="lg:col-span-2">
-            <Card className="p-8 lg:p-12 gradient-card shadow-card border-0">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-black rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Apple className="w-10 h-10 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">iOS App Store</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Download for iPhone and iPad with optimized touch gestures and accessibility features.
-                  </p>
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <Card className="p-8 lg:p-12 gradient-card shadow-card border-0">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-black rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Apple className="w-10 h-10 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">iOS App Store</h3>
+                <p className="text-muted-foreground mb-6">
+                  Download for iPhone and iPad with optimized touch gestures and accessibility features.
+                </p>
+                <Link to="/qr-code">
                   <Button variant="default" size="lg" className="w-full">
                     <Apple className="mr-2" />
                     Download for iOS
                   </Button>
-                </div>
+                </Link>
+              </div>
 
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <PlayIcon className="w-10 h-10 text-white fill-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">Google Play</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Get it on Android devices with advanced AI features and camera integration.
-                  </p>
+              <div className="text-center">
+                <div className="w-20 h-20 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <PlayIcon className="w-10 h-10 text-white fill-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Google Play</h3>
+                <p className="text-muted-foreground mb-6">
+                  Get it on Android devices with advanced AI features and camera integration.
+                </p>
+                <Link to="/qr-code">
                   <Button variant="default" size="lg" className="w-full">
                     <PlayIcon className="mr-2" />
                     Download for Android
                   </Button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <div className="flex flex-wrap justify-center gap-4 mb-6">
+                <div className="flex items-center text-muted-foreground">
+                  <Smartphone className="w-5 h-5 mr-2" />
+                  <span>Mobile Optimized</span>
+                </div>
+                <div className="flex items-center text-muted-foreground">
+                  <DownloadIcon className="w-5 h-5 mr-2" />
+                  <span>Free Download</span>
+                </div>
+                <div className="flex items-center text-muted-foreground">
+                  <QrCode className="w-5 h-5 mr-2" />
+                  <span>Easy Setup</span>
                 </div>
               </div>
+              <p className="text-sm text-muted-foreground">
+                System Requirements: iOS 14.0+ or Android 8.0+. Internet connection required for AI features.
+              </p>
+            </div>
+          </Card>
 
-              <div className="mt-12 text-center">
-                <div className="flex flex-wrap justify-center gap-4 mb-6">
-                  <div className="flex items-center text-muted-foreground">
-                    <Smartphone className="w-5 h-5 mr-2" />
-                    <span>Mobile Optimized</span>
-                  </div>
-                  <div className="flex items-center text-muted-foreground">
-                    <DownloadIcon className="w-5 h-5 mr-2" />
-                    <span>Free Download</span>
-                  </div>
-                  <div className="flex items-center text-muted-foreground">
-                    <QrCode className="w-5 h-5 mr-2" />
-                    <span>Easy Setup</span>
-                  </div>
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  System Requirements: iOS 14.0+ or Android 8.0+. Internet connection required for AI features.
-                </p>
-              </div>
-            </Card>
-          </div>
-
+          {/* QR Code Preview Card */}
           <div className="flex justify-center">
-            <Card className="p-8 gradient-card shadow-card text-center border-0">
+            <Card className="p-8 gradient-card shadow-card text-center border-0 w-full max-w-sm">
               <QrCode className="w-32 h-32 mx-auto mb-6 text-primary" />
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Scan to Download
+                Quick Download
               </h3>
               <p className="text-muted-foreground text-sm mb-6">
-                Use your phone's camera to scan this QR code and get directed to the app store.
+                Click any download button to get your QR code and download the app instantly.
               </p>
-              <div className="text-xs text-muted-foreground">
-                <p>Works with both</p>
-                <p>iOS and Android devices</p>
-              </div>
+              <Link to="/qr-code">
+                <Button variant="outline" size="lg" className="w-full">
+                  Get QR Code
+                </Button>
+              </Link>
             </Card>
           </div>
         </div>

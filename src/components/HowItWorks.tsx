@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, UserPlus, BookOpen, Trophy, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const HowItWorks = () => {
   const steps = [
@@ -82,10 +83,12 @@ export const HowItWorks = () => {
               Start your journey today and break communication barriers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-                <Download className="mr-2" />
-                Download Now
-              </Button>
+              <Link to="/qr-code">
+                <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+                  <Download className="mr-2" />
+                  Download Now
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4">
                 Watch Demo
                 <ArrowRight className="ml-2" />
