@@ -100,25 +100,14 @@ export const Testimonials = () => {
         <div className="mt-16 text-center">
           <Card className="p-8 lg:p-12 gradient-card shadow-card max-w-4xl mx-auto">
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-              Join Our Growing Community
+              Be the First to Experience UniSign
             </h3>
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">4.9/5</div>
-                <p className="text-muted-foreground">App Store Rating</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-secondary mb-2">50K+</div>
-                <p className="text-muted-foreground">Active Users</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">25+</div>
-                <p className="text-muted-foreground">Countries Reached</p>
-              </div>
-            </div>
-            <p className="text-lg text-muted-foreground">
-              Be part of a global movement towards better accessibility and communication.
+            <p className="text-lg text-muted-foreground mb-6">
+              Join our community of early supporters and be among the first to experience the future of sign language learning.
             </p>
+            <div className="flex justify-center">
+              <div className="text-6xl animate-bounce">🚀</div>
+            </div>
           </Card>
         </div>
       </div>

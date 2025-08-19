@@ -59,21 +59,16 @@ export const About = () => {
         <div className="mt-16 text-center">
           <Card className="p-8 lg:p-12 gradient-card shadow-card max-w-4xl mx-auto">
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-              Our Impact
+              Coming Soon
             </h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">10,000+</div>
-                <p className="text-muted-foreground">Students Empowered</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-secondary mb-2">500+</div>
-                <p className="text-muted-foreground">Sign Language Lessons</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">95%</div>
-                <p className="text-muted-foreground">Student Success Rate</p>
-              </div>
+            <p className="text-lg text-muted-foreground mb-6">
+              UniSign is currently in development. We're working hard to bring you the most innovative 
+              sign language learning experience. Download our website and stay tuned for the official launch!
+            </p>
+            <div className="flex justify-center items-center space-x-4">
+              <div className="w-4 h-4 bg-primary rounded-full animate-bounce"></div>
+              <div className="w-4 h-4 bg-secondary rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+              <div className="w-4 h-4 bg-accent rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
             </div>
           </Card>
         </div>

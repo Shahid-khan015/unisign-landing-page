@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Cpu, BookOpen, MessageSquare, PlayCircle, ArrowRight } from "lucide-react";
+import { Cpu, BookOpen, MessageSquare, PlayCircle, ArrowRight, PenTool, Gamepad2 } from "lucide-react";
 
 export const Features = () => {
   const features = [
@@ -11,21 +11,21 @@ export const Features = () => {
       color: "text-primary"
     },
     {
-      icon: BookOpen,
-      title: "Interactive Quizzes",
-      description: "Gamified learning experience with adaptive quizzes that adjust to your learning pace and progress.",
+      icon: MessageSquare,
+      title: "Text-to-Sign AI",
+      description: "Revolutionary AI that converts text into sign language animations, making communication seamless and instant.",
       color: "text-secondary"
     },
     {
-      icon: MessageSquare,
-      title: "Sign-to-Text AI",
-      description: "Advanced AI technology that recognizes your signs and provides real-time feedback and corrections.",
+      icon: BookOpen,
+      title: "World Game Vocabulary",
+      description: "Explore sign language from different countries and cultures through engaging gamified vocabulary challenges.",
       color: "text-primary"
     },
     {
       icon: PlayCircle,
-      title: "Video Lessons",
-      description: "Professional video lessons from certified sign language instructors with step-by-step guidance.",
+      title: "Interactive Quizzes",
+      description: "Multiple quiz formats including speed challenges, memory games, and practical signing assessments.",
       color: "text-secondary"
     }
   ];
@@ -72,21 +72,41 @@ export const Features = () => {
               Why Choose UniSign?
             </h3>
             <div className="grid md:grid-cols-2 gap-8 text-left">
-              <div>
-                <h4 className="text-xl font-semibold text-primary mb-3">Personalized Learning</h4>
-                <p className="text-muted-foreground">AI-powered personalization that adapts to your learning style and pace.</p>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 gradient-hero rounded-lg flex items-center justify-center flex-shrink-0">
+                  <PenTool className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-primary mb-3">Digital Whiteboard</h4>
+                  <p className="text-muted-foreground">Practice sign language with our interactive whiteboard and get instant feedback on your hand movements.</p>
+                </div>
               </div>
-              <div>
-                <h4 className="text-xl font-semibold text-secondary mb-3">Expert Content</h4>
-                <p className="text-muted-foreground">Created by certified sign language instructors and accessibility experts.</p>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 gradient-hero rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Gamepad2 className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-secondary mb-3">Gamified Learning</h4>
+                  <p className="text-muted-foreground">Level up your skills with achievement badges, leaderboards, and fun challenges.</p>
+                </div>
               </div>
-              <div>
-                <h4 className="text-xl font-semibold text-primary mb-3">Progress Tracking</h4>
-                <p className="text-muted-foreground">Detailed analytics and progress reports to keep you motivated.</p>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 gradient-hero rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Cpu className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-primary mb-3">AI-Powered Recognition</h4>
+                  <p className="text-muted-foreground">Advanced computer vision technology that understands and evaluates your signing accuracy.</p>
+                </div>
               </div>
-              <div>
-                <h4 className="text-xl font-semibold text-secondary mb-3">Community Support</h4>
-                <p className="text-muted-foreground">Connect with other learners and native signers in our community.</p>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 gradient-hero rounded-lg flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-secondary mb-3">Comprehensive Curriculum</h4>
+                  <p className="text-muted-foreground">From basic alphabet to complex conversations, learn at your own pace with structured lessons.</p>
+                </div>
               </div>
             </div>
           </Card>
