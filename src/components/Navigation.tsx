@@ -1,18 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useLocalization } from "@/contexts/LocalizationContext";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLocalization();
   const location = useLocation();
 
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Features", path: "/features" },
-    { name: "How It Works", path: "/how-it-works" },
+    { name: t('nav.features'), path: "/features" },
+    { name: t('nav.howItWorks'), path: "/how-it-works" },
+    { name: t('nav.about'), path: "/about" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -42,6 +43,12 @@ export const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <LanguageSwitcher />
+            <Link to="/download">
+              <Button variant="default" size="sm">
+                {t('nav.download')}
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -72,6 +79,14 @@ export const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              <div className="px-3 py-2">
+                <LanguageSwitcher />
+              </div>
+              <Link to="/download" onClick={() => setIsOpen(false)}>
+                <Button variant="default" size="sm" className="w-full">
+                  {t('nav.download')}
+                </Button>
+              </Link>
             </div>
           </div>
         )}
