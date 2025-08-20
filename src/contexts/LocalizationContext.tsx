@@ -186,10 +186,15 @@ export const LocalizationProvider: React.FC<{ children: ReactNode }> = ({ childr
   );
 };
 
-export const useLocalization = () => {
+export const useLocalization = (): LocalizationContextType => {
   const context = useContext(LocalizationContext);
   if (context === undefined) {
-    throw new Error('useLocalization must be used within a LocalizationProvider');
+    // Provide fallback values when context is not available
+    return {
+      language: 'en' as Language,
+      setLanguage: () => {},
+      t: (key: string) => translations.en[key] || key
+    };
   }
   return context;
 };
