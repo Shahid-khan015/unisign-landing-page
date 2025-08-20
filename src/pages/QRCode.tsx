@@ -156,6 +156,18 @@ const QRCode = () => {
                     <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
                     <span className="text-sm">{t('qr.signModels')}</span>
                   </div>
+                  <div className="flex items-start text-muted-foreground">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="text-sm">{t('qr.realTimeRecognition')}</span>
+                  </div>
+                  <div className="flex items-start text-muted-foreground">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="text-sm">{t('qr.progressTracking')}</span>
+                  </div>
+                  <div className="flex items-start text-muted-foreground">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="text-sm">{t('qr.offlineMode')}</span>
+                  </div>
                 </div>
               </Card>
             </div>

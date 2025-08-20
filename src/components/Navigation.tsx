@@ -11,6 +11,7 @@ export const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
+    { name: t('nav.home'), path: "/" },
     { name: t('nav.features'), path: "/features" },
     { name: t('nav.howItWorks'), path: "/how-it-works" },
     { name: t('nav.about'), path: "/about" },
@@ -44,11 +45,6 @@ export const Navigation = () => {
               </Link>
             ))}
             <LanguageSwitcher />
-            <Link to="/download">
-              <Button variant="default" size="sm">
-                {t('nav.download')}
-              </Button>
-            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -82,11 +78,6 @@ export const Navigation = () => {
               <div className="px-3 py-2">
                 <LanguageSwitcher />
               </div>
-              <Link to="/download" onClick={() => setIsOpen(false)}>
-                <Button variant="default" size="sm" className="w-full">
-                  {t('nav.download')}
-                </Button>
-              </Link>
             </div>
           </div>
         )}

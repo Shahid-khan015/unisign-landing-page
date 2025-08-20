@@ -11,6 +11,7 @@ interface LocalizationContextType {
 const translations = {
   en: {
     // Navigation
+    'nav.home': 'Home',
     'nav.features': 'Features',
     'nav.howItWorks': 'How It Works',
     'nav.about': 'About',
@@ -41,6 +42,9 @@ const translations = {
     'qr.whatsIncluded': 'What\'s Included',
     'qr.aiLearning': 'AI-powered learning with personalized curriculum',
     'qr.signModels': '3D sign models and interactive demonstrations',
+    'qr.realTimeRecognition': 'Real-time sign language recognition and feedback',
+    'qr.progressTracking': 'Interactive quizzes and progress tracking',
+    'qr.offlineMode': 'Offline mode for learning without internet',
     
     // Help Section
     'qr.needHelp': 'Need Help?',
@@ -64,6 +68,7 @@ const translations = {
   },
   hi: {
     // Navigation
+    'nav.home': 'होम',
     'nav.features': 'विशेषताएं',
     'nav.howItWorks': 'यह कैसे काम करता है',
     'nav.about': 'हमारे बारे में',
@@ -94,6 +99,9 @@ const translations = {
     'qr.whatsIncluded': 'क्या शामिल है',
     'qr.aiLearning': 'व्यक्तिगत पाठ्यक्रम के साथ AI-संचालित शिक्षा',
     'qr.signModels': '3D साइन मॉडल और इंटरैक्टिव प्रदर्शन',
+    'qr.realTimeRecognition': 'रीयल-टाइम साइन लैंग्वेज पहचान और फीडबैक',
+    'qr.progressTracking': 'इंटरैक्टिव क्विज़ और प्रगति ट्रैकिंग',
+    'qr.offlineMode': 'इंटरनेट के बिना सीखने के लिए ऑफलाइन मोड',
     
     // Help Section
     'qr.needHelp': 'सहायता चाहिए?',
@@ -117,6 +125,7 @@ const translations = {
   },
   gu: {
     // Navigation
+    'nav.home': 'હોમ',
     'nav.features': 'વિશેષતાઓ',
     'nav.howItWorks': 'તે કેવી રીતે કામ કરે છે',
     'nav.about': 'અમારા વિશે',
@@ -147,6 +156,9 @@ const translations = {
     'qr.whatsIncluded': 'શું સમાવેશ થાય છે',
     'qr.aiLearning': 'વ્યક્તિગત અભ્યાસક્રમ સાથે AI-સંચાલિત શિક્ષણ',
     'qr.signModels': '3D સાઇન મોડલ્સ અને ઇન્ટરેક્ટિવ પ્રદર્શન',
+    'qr.realTimeRecognition': 'રીઅલ-ટાઇમ સાઇન લેંગ્વેજ ઓળખ અને ફીડબેક',
+    'qr.progressTracking': 'ઇન્ટરેક્ટિવ ક્વિઝ અને પ્રગતિ ટ્રેકિંગ',
+    'qr.offlineMode': 'ઇન્ટરનેટ વિના શીખવા માટે ઓફલાઇન મોડ',
     
     // Help Section
     'qr.needHelp': 'મદદની જરૂર છે?',
