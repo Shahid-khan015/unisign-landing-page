@@ -1,31 +1,34 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Cpu, BookOpen, MessageSquare, PlayCircle, ArrowRight, PenTool, Gamepad2 } from "lucide-react";
+import { useLocalization } from "@/contexts/LocalizationContext";
 
 export const Features = () => {
+  const { t } = useLocalization();
+
   const features = [
     {
       icon: Cpu,
-      title: "3D Sign Models",
-      description: "Interactive 3D models that show precise hand movements and positioning for perfect sign language learning.",
+      title: t('features.3dModels'),
+      description: t('features.3dDesc'),
       color: "text-primary"
     },
     {
       icon: MessageSquare,
-      title: "Text-to-Sign AI",
-      description: "Revolutionary AI that converts text into sign language animations, making communication seamless and instant.",
+      title: t('features.textToSign'),
+      description: t('features.textToSignDesc'),
       color: "text-secondary"
     },
     {
       icon: BookOpen,
-      title: "World Game Vocabulary",
-      description: "Explore sign language from different countries and cultures through engaging gamified vocabulary challenges.",
+      title: t('features.worldGame'),
+      description: t('features.worldGameDesc'),
       color: "text-primary"
     },
     {
       icon: PlayCircle,
-      title: "Interactive Quizzes",
-      description: "Multiple quiz formats including speed challenges, memory games, and practical signing assessments.",
+      title: t('features.quizzes'),
+      description: t('features.quizzesDesc'),
       color: "text-secondary"
     }
   ];
@@ -35,11 +38,10 @@ export const Features = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Powerful Features
+            {t('features.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Experience the future of sign language learning with our innovative features designed 
-            to make learning accessible, engaging, and effective for everyone.
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -65,7 +67,7 @@ export const Features = () => {
         <div className="mt-16 text-center">
           <Card className="p-8 lg:p-12 gradient-card shadow-card max-w-4xl mx-auto">
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-              Why Choose UniSign?
+              {t('features.whyChoose')}
             </h3>
             <div className="grid md:grid-cols-2 gap-8 text-left">
               <div className="flex items-start gap-4">
@@ -73,8 +75,8 @@ export const Features = () => {
                   <PenTool className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold text-primary mb-3">Digital Whiteboard</h4>
-                  <p className="text-muted-foreground">Practice sign language with our interactive whiteboard and get instant feedback on your hand movements.</p>
+                  <h4 className="text-xl font-semibold text-primary mb-3">{t('features.digitalWhiteboard')}</h4>
+                  <p className="text-muted-foreground">{t('features.digitalWhiteboardDesc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -82,8 +84,8 @@ export const Features = () => {
                   <Gamepad2 className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold text-secondary mb-3">Gamified Learning</h4>
-                  <p className="text-muted-foreground">Level up your skills with achievement badges, leaderboards, and fun challenges.</p>
+                  <h4 className="text-xl font-semibold text-secondary mb-3">{t('features.gamifiedLearning')}</h4>
+                  <p className="text-muted-foreground">{t('features.gamifiedDesc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -91,8 +93,8 @@ export const Features = () => {
                   <Cpu className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold text-primary mb-3">AI-Powered Recognition</h4>
-                  <p className="text-muted-foreground">Advanced computer vision technology that understands and evaluates your signing accuracy.</p>
+                  <h4 className="text-xl font-semibold text-primary mb-3">{t('features.aiRecognition')}</h4>
+                  <p className="text-muted-foreground">{t('features.aiRecognitionDesc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -100,8 +102,8 @@ export const Features = () => {
                   <BookOpen className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold text-secondary mb-3">Comprehensive Curriculum</h4>
-                  <p className="text-muted-foreground">From basic alphabet to complex conversations, learn at your own pace with structured lessons.</p>
+                  <h4 className="text-xl font-semibold text-secondary mb-3">{t('features.curriculum')}</h4>
+                  <p className="text-muted-foreground">{t('features.curriculumDesc')}</p>
                 </div>
               </div>
             </div>

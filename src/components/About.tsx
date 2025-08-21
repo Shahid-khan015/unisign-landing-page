@@ -1,27 +1,30 @@
 import { Card } from "@/components/ui/card";
 import { Heart, Users, Target, Award } from "lucide-react";
+import { useLocalization } from "@/contexts/LocalizationContext";
 
 export const About = () => {
+  const { t } = useLocalization();
+
   const values = [
     {
       icon: Heart,
-      title: "Accessibility First",
-      description: "We believe everyone deserves equal access to communication and learning opportunities."
+      title: t('about.accessibilityFirst'),
+      description: t('about.accessibilityDesc')
     },
     {
       icon: Users,
-      title: "Community Driven",
-      description: "Built by and for the deaf and mute community with continuous feedback and improvement."
+      title: t('about.communityDriven'),
+      description: t('about.communityDesc')
     },
     {
       icon: Target,
-      title: "Goal Oriented",
-      description: "Structured learning paths that help students achieve their sign language goals effectively."
+      title: t('about.goalOriented'),
+      description: t('about.goalDesc')
     },
     {
       icon: Award,
-      title: "Excellence",
-      description: "Award-winning technology that sets new standards in accessibility education."
+      title: t('about.excellence'),
+      description: t('about.excellenceDesc')
     }
   ];
 
@@ -30,12 +33,10 @@ export const About = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            About UniSign
+            {t('about.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            UniSign is more than just an app - it's a movement towards breaking communication barriers. 
-            Our mission is to empower deaf and mute students with cutting-edge technology that makes 
-            sign language learning accessible, engaging, and effective.
+            {t('about.subtitle')}
           </p>
         </div>
 
@@ -59,11 +60,10 @@ export const About = () => {
         <div className="mt-16 text-center">
           <Card className="p-8 lg:p-12 gradient-card shadow-card max-w-4xl mx-auto">
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-              Coming Soon
+              {t('about.comingSoon')}
             </h3>
             <p className="text-lg text-muted-foreground mb-6">
-              UniSign is currently in development. We're working hard to bring you the most innovative 
-              sign language learning experience. Download our website and stay tuned for the official launch!
+              {t('about.comingSoonDesc')}
             </p>
             <div className="flex justify-center items-center space-x-4">
               <div className="w-4 h-4 bg-primary rounded-full animate-bounce"></div>

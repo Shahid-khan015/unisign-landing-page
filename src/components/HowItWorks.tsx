@@ -2,35 +2,38 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, UserPlus, BookOpen, Trophy, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLocalization } from "@/contexts/LocalizationContext";
 
 export const HowItWorks = () => {
+  const { t } = useLocalization();
+
   const steps = [
     {
       step: "01",
       icon: Download,
-      title: "Download UniSign",
-      description: "Get the app from App Store or Google Play Store. Quick setup in less than 2 minutes.",
+      title: t('howItWorks.step1'),
+      description: t('howItWorks.step1Desc'),
       color: "primary"
     },
     {
       step: "02", 
       icon: UserPlus,
-      title: "Create Your Profile",
-      description: "Set up your personalized learning profile and choose your preferred learning path.",
+      title: t('howItWorks.step2'),
+      description: t('howItWorks.step2Desc'),
       color: "secondary"
     },
     {
       step: "03",
       icon: BookOpen,
-      title: "Start Learning",
-      description: "Begin with interactive lessons, 3D models, and AI-powered feedback systems.",
+      title: t('howItWorks.step3'),
+      description: t('howItWorks.step3Desc'),
       color: "primary"
     },
     {
       step: "04",
       icon: Trophy,
-      title: "Track Progress",
-      description: "Monitor your achievements, earn badges, and connect with the learning community.",
+      title: t('howItWorks.step4'),
+      description: t('howItWorks.step4Desc'),
       color: "secondary"
     }
   ];
@@ -40,11 +43,10 @@ export const HowItWorks = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            How It Works
+            {t('howItWorks.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Getting started with UniSign is simple and intuitive. Follow these easy steps to begin 
-            your sign language learning journey today.
+            {t('howItWorks.subtitle')}
           </p>
         </div>
 
@@ -76,21 +78,20 @@ export const HowItWorks = () => {
         <div className="mt-16 text-center">
           <Card className="p-8 lg:p-12 gradient-feature shadow-card max-w-4xl mx-auto">
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-              Ready to Get Started?
+              {t('howItWorks.ready')}
             </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join thousands of students who are already learning sign language with UniSign. 
-              Start your journey today and break communication barriers.
+              {t('howItWorks.readyDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/qr-code">
                 <Button variant="hero" size="lg" className="text-lg px-8 py-4">
                   <Download className="mr-2" />
-                  Download Now
+                  {t('landing.downloadNow')}
                 </Button>
               </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-                Watch Demo
+                {t('howItWorks.watchDemo')}
                 <ArrowRight className="ml-2" />
               </Button>
             </div>
