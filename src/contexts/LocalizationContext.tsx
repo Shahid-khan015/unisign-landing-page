@@ -17,6 +17,18 @@ const translations = {
     'nav.about': 'About',
     'nav.download': 'Download',
     
+    // Landing Page
+    'landing.whyChoose': 'Why Choose UniSign?',
+    'landing.learnEffectively': 'Learn Effectively',
+    'landing.learnDescription': 'Interactive lessons with 3D models and real-time feedback',
+    'landing.exploreFeatures': 'Explore Features',
+    'landing.builtForEveryone': 'Built for Everyone',
+    'landing.builtDescription': 'Designed specifically for deaf and mute students',
+    'landing.ourMission': 'Our Mission',
+    'landing.getStartedToday': 'Get Started Today',
+    'landing.getStartedDescription': 'Scan QR code to download UniSign instantly',
+    'landing.downloadNow': 'Download Now',
+    
     // Hero
     'hero.title': 'Revolutionary AI-Powered Sign Language Learning',
     'hero.subtitle': 'Empowering deaf and mute students with cutting-edge technology for seamless sign language education and communication.',
@@ -42,9 +54,11 @@ const translations = {
     'qr.whatsIncluded': 'What\'s Included',
     'qr.aiLearning': 'AI-powered learning with personalized curriculum',
     'qr.signModels': '3D sign models and interactive demonstrations',
+    'qr.digitalWhiteboard': 'Digital whiteboard for practice',
+    'qr.vocabularyPractice': 'Gujarati & English vocabulary practice',
+    'qr.signToText': 'Sign to text and vice versa functionality',
+    'qr.mathsLearning': 'Mathematics learning section',
     'qr.realTimeRecognition': 'Real-time sign language recognition and feedback',
-    'qr.progressTracking': 'Interactive quizzes and progress tracking',
-    'qr.offlineMode': 'Offline mode for learning without internet',
     
     // Help Section
     'qr.needHelp': 'Need Help?',
@@ -74,6 +88,18 @@ const translations = {
     'nav.about': 'हमारे बारे में',
     'nav.download': 'डाउनलोड',
     
+    // Landing Page
+    'landing.whyChoose': 'UniSign क्यों चुनें?',
+    'landing.learnEffectively': 'प्रभावी रूप से सीखें',
+    'landing.learnDescription': '3D मॉडल और रियल-टाइम फीडबैक के साथ इंटरैक्टिव पाठ',
+    'landing.exploreFeatures': 'सुविधाएं देखें',
+    'landing.builtForEveryone': 'सभी के लिए बनाया गया',
+    'landing.builtDescription': 'विशेष रूप से बधिर और मूक छात्रों के लिए डिज़ाइन किया गया',
+    'landing.ourMission': 'हमारा मिशन',
+    'landing.getStartedToday': 'आज ही शुरुआत करें',
+    'landing.getStartedDescription': 'UniSign तुरंत डाउनलोड करने के लिए QR कोड स्कैन करें',
+    'landing.downloadNow': 'अभी डाउनलोड करें',
+    
     // Hero
     'hero.title': 'क्रांतिकारी AI-संचालित सांकेतिक भाषा शिक्षा',
     'hero.subtitle': 'बधिर और मूक छात्रों को अत्याधुनिक तकनीक के साथ सशक्त बनाना।',
@@ -99,9 +125,11 @@ const translations = {
     'qr.whatsIncluded': 'क्या शामिल है',
     'qr.aiLearning': 'व्यक्तिगत पाठ्यक्रम के साथ AI-संचालित शिक्षा',
     'qr.signModels': '3D साइन मॉडल और इंटरैक्टिव प्रदर्शन',
+    'qr.digitalWhiteboard': 'अभ्यास के लिए डिजिटल व्हाइटबोर्ड',
+    'qr.vocabularyPractice': 'गुजराती और अंग्रेजी शब्दावली अभ्यास',
+    'qr.signToText': 'साइन से टेक्स्ट और इसके विपरीत कार्यक्षमता',
+    'qr.mathsLearning': 'गणित सीखने का खंड',
     'qr.realTimeRecognition': 'रीयल-टाइम साइन लैंग्वेज पहचान और फीडबैक',
-    'qr.progressTracking': 'इंटरैक्टिव क्विज़ और प्रगति ट्रैकिंग',
-    'qr.offlineMode': 'इंटरनेट के बिना सीखने के लिए ऑफलाइन मोड',
     
     // Help Section
     'qr.needHelp': 'सहायता चाहिए?',
@@ -131,6 +159,18 @@ const translations = {
     'nav.about': 'અમારા વિશે',
     'nav.download': 'ડાઉનલોડ',
     
+    // Landing Page
+    'landing.whyChoose': 'UniSign કેમ પસંદ કરો?',
+    'landing.learnEffectively': 'અસરકારક રીતે શીખો',
+    'landing.learnDescription': '3D મોડલ અને રિયલ-ટાઇમ ફીડબેક સાથે ઇન્ટરેક્ટિવ પાઠ',
+    'landing.exploreFeatures': 'સુવિધાઓ જુઓ',
+    'landing.builtForEveryone': 'બધા માટે બનાવેલ',
+    'landing.builtDescription': 'બહેરા અને મૂંગા વિદ્યાર્થીઓ માટે ખાસ ડિઝાઇન કરેલ',
+    'landing.ourMission': 'અમારું મિશન',
+    'landing.getStartedToday': 'આજે જ શરૂઆત કરો',
+    'landing.getStartedDescription': 'UniSign તરત ડાઉનલોડ કરવા માટે QR કોડ સ્કેન કરો',
+    'landing.downloadNow': 'હવે ડાઉનલોડ કરો',
+    
     // Hero
     'hero.title': 'ક્રાંતિકારી AI-સંચાલિત સાંકેતિક ભાષા શિક્ષણ',
     'hero.subtitle': 'બહેરા અને મૂંગા વિદ્યાર્થીઓને અત્યાધુનિક તકનીક સાથે સશક્ત બનાવવું।',
@@ -156,9 +196,11 @@ const translations = {
     'qr.whatsIncluded': 'શું સમાવેશ થાય છે',
     'qr.aiLearning': 'વ્યક્તિગત અભ્યાસક્રમ સાથે AI-સંચાલિત શિક્ષણ',
     'qr.signModels': '3D સાઇન મોડલ્સ અને ઇન્ટરેક્ટિવ પ્રદર્શન',
+    'qr.digitalWhiteboard': 'અભ્યાસ માટે ડિજિટલ વ્હાઇટબોર્ડ',
+    'qr.vocabularyPractice': 'ગુજરાતી અને અંગ્રેજી શબ્દભંડોળ અભ્યાસ',
+    'qr.signToText': 'સાઇન થી ટેક્સ્ટ અને વિપરીત કાર્યક્ષમતા',
+    'qr.mathsLearning': 'ગણિત શીખવાનો વિભાગ',
     'qr.realTimeRecognition': 'રીઅલ-ટાઇમ સાઇન લેંગ્વેજ ઓળખ અને ફીડબેક',
-    'qr.progressTracking': 'ઇન્ટરેક્ટિવ ક્વિઝ અને પ્રગતિ ટ્રેકિંગ',
-    'qr.offlineMode': 'ઇન્ટરનેટ વિના શીખવા માટે ઓફલાઇન મોડ',
     
     // Help Section
     'qr.needHelp': 'મદદની જરૂર છે?',

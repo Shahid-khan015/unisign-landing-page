@@ -71,17 +71,21 @@ const QRCode = () => {
       
       <section className="py-20 px-4 gradient-hero">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              {t('qr.backHome')}
-            </Link>
-            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-              {t('qr.title')}
-            </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              {t('qr.subtitle')}
-            </p>
+          <div className="mb-16">
+            <div className="flex justify-start mb-8">
+              <Link to="/" className="inline-flex items-center text-white/80 hover:text-white transition-colors bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                {t('qr.backHome')}
+              </Link>
+            </div>
+            <div className="text-center">
+              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+                {t('qr.title')}
+              </h1>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+                {t('qr.subtitle')}
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-12 items-start max-w-6xl mx-auto">
@@ -158,15 +162,23 @@ const QRCode = () => {
                   </div>
                   <div className="flex items-start text-muted-foreground">
                     <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="text-sm">{t('qr.digitalWhiteboard')}</span>
+                  </div>
+                  <div className="flex items-start text-muted-foreground">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="text-sm">{t('qr.vocabularyPractice')}</span>
+                  </div>
+                  <div className="flex items-start text-muted-foreground">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="text-sm">{t('qr.signToText')}</span>
+                  </div>
+                  <div className="flex items-start text-muted-foreground">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="text-sm">{t('qr.mathsLearning')}</span>
+                  </div>
+                  <div className="flex items-start text-muted-foreground">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
                     <span className="text-sm">{t('qr.realTimeRecognition')}</span>
-                  </div>
-                  <div className="flex items-start text-muted-foreground">
-                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span className="text-sm">{t('qr.progressTracking')}</span>
-                  </div>
-                  <div className="flex items-start text-muted-foreground">
-                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span className="text-sm">{t('qr.offlineMode')}</span>
                   </div>
                 </div>
               </Card>
