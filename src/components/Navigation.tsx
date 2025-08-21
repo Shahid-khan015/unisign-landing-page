@@ -4,6 +4,8 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLocalization } from "@/contexts/LocalizationContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+// 👇 Import your logo
+import Logo from "@/assets/logo.png"; // place logo.jpg inside src/assets/
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +26,18 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">U</span>
-            </div>
-            <span className="text-xl font-bold text-primary">UniSign</span>
-          </Link>
+          <Link to="/" className="flex items-center gap-2">
+  <img 
+    src={Logo} 
+    alt="UniSign Logo" 
+    className="h-7 w-auto object-contain align-middle"
+  />
+  <span className="text-xl font-bold text-primary leading-none">
+    UniSign
+  </span>
+</Link>
+
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
