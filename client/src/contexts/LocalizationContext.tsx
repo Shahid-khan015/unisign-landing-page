@@ -431,7 +431,7 @@ export const LocalizationProvider: React.FC<{ children: ReactNode }> = ({ childr
   const [language, setLanguage] = useState<Language>('en');
 
   const t = (key: string): string => {
-    return translations[language][key] || translations.en[key] || key;
+    return (translations[language] as any)[key] || (translations.en as any)[key] || key;
   };
 
   return (
@@ -448,7 +448,7 @@ export const useLocalization = (): LocalizationContextType => {
     return {
       language: 'en' as Language,
       setLanguage: () => {},
-      t: (key: string) => translations.en[key] || key
+      t: (key: string) => (translations.en as any)[key] || key
     };
   }
   return context;

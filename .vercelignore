@@ -1,0 +1,10 @@
+node_modules
+.replit
+.replit.nix
+.env
+server/
+shared/
+client/src/
+*.log
+.git/
+README.md
