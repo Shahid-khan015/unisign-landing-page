@@ -130,6 +130,22 @@ const translations = {
     'footer.madeWith': 'Made with',
     'footer.forCommunity': 'for the deaf and mute community',
     'footer.copyright': '© 2024 UniSign. Empowering communication through technology.',
+
+    // Privacy Policy
+    'privacy.backHome': 'Back to Home',
+    'privacy.title': 'Privacy Policy',
+    'privacy.lastUpdated': 'Last updated: December 2024',
+    'privacy.introduction': 'Introduction',
+    'privacy.introText1': 'UniSign ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our sign language learning application and related services.',
+    'privacy.introText2': 'By using UniSign, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our application.',
+    'privacy.infoWeCollect': 'Information We Collect',
+    'privacy.personalInfo': 'Personal Information',
+    'privacy.learningData': 'Learning Data',
+    'privacy.technicalInfo': 'Technical Information',
+    'privacy.howWeUse': 'How We Use Your Information',
+    'privacy.dataSharing': 'Data Sharing and Disclosure',
+    'privacy.dataSecurity': 'Data Security',
+    'privacy.yourRights': 'Your Rights and Choices',
   },
   hi: {
     // Navigation
@@ -252,6 +268,22 @@ const translations = {
     'footer.madeWith': 'के साथ बनाया गया',
     'footer.forCommunity': 'बधिर और मूक समुदाय के लिए',
     'footer.copyright': '© 2024 UniSign. तकनीक के माध्यम से संचार को सशक्त बनाना।',
+
+    // Privacy Policy
+    'privacy.backHome': 'होम पर वापस',
+    'privacy.title': 'गोपनीयता नीति',
+    'privacy.lastUpdated': 'अंतिम अपडेट: दिसंबर 2024',
+    'privacy.introduction': 'परिचय',
+    'privacy.introText1': 'UniSign ("हम," "हमारा," या "हमें") आपकी गोपनीयता की सुरक्षा के लिए प्रतिबद्ध है। यह गोपनीयता नीति बताती है कि हम आपकी जानकारी कैसे एकत्रित, उपयोग, प्रकट और सुरक्षित करते हैं।',
+    'privacy.introText2': 'UniSign का उपयोग करके, आप इस नीति के अनुसार जानकारी के संग्रह और उपयोग से सहमत हैं।',
+    'privacy.infoWeCollect': 'हमारे द्वारा एकत्रित जानकारी',
+    'privacy.personalInfo': 'व्यक्तिगत जानकारी',
+    'privacy.learningData': 'शिक्षण डेटा',
+    'privacy.technicalInfo': 'तकनीकी जानकारी',
+    'privacy.howWeUse': 'हम आपकी जानकारी का उपयोग कैसे करते हैं',
+    'privacy.dataSharing': 'डेटा साझाकरण और प्रकटीकरण',
+    'privacy.dataSecurity': 'डेटा सुरक्षा',
+    'privacy.yourRights': 'आपके अधिकार और विकल्प',
   },
   gu: {
     // Navigation
@@ -374,6 +406,22 @@ const translations = {
     'footer.madeWith': 'સાથે બનાવેલું',
     'footer.forCommunity': 'બહેરા અને મૂંગા સમુદાય માટે',
     'footer.copyright': '© 2024 UniSign. ટેકનોલોજી દ્વારા સંદેશાવ્યવહારને સશક્ત બનાવવું।',
+
+    // Privacy Policy
+    'privacy.backHome': 'હોમ પર પાછા',
+    'privacy.title': 'ગોપનીયતા નીતિ',
+    'privacy.lastUpdated': 'છેલ્લું અપડેટ: ડિસેમ્બર 2024',
+    'privacy.introduction': 'પરિચય',
+    'privacy.introText1': 'UniSign ("અમે," "અમારું," અથવા "અમને") તમારી ગોપનીયતાની સુરક્ષા માટે પ્રતિબદ્ધ છે। આ ગોપનીયતા નીતિ સમજાવે છે કે અમે તમારી માહિતી કેવી રીતે એકત્રિત, ઉપયોગ, જાહેર અને સુરક્ષિત કરીએ છીએ।',
+    'privacy.introText2': 'UniSign નો ઉપયોગ કરીને, તમે આ નીતિ અનુસાર માહિતીના સંગ્રહ અને ઉપયોગ સાથે સંમત થાઓ છો।',
+    'privacy.infoWeCollect': 'અમે એકત્રિત કરેલી માહિતી',
+    'privacy.personalInfo': 'વ્યક્તિગત માહિતી',
+    'privacy.learningData': 'શિક્ષણ ડેટા',
+    'privacy.technicalInfo': 'ટેકનિકલ માહિતી',
+    'privacy.howWeUse': 'અમે તમારી માહિતીનો ઉપયોગ કેવી રીતે કરીએ છીએ',
+    'privacy.dataSharing': 'ડેટા શેરિંગ અને જાહેરાત',
+    'privacy.dataSecurity': 'ડેટા સુરક્ષા',
+    'privacy.yourRights': 'તમારા અધિકારો અને પસંદગીઓ',
   }
 };
 

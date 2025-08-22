@@ -79,10 +79,10 @@ const QRCode = () => {
               </Link>
             </div>
             <div className="text-center">
-              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6">
                 {t('qr.title')}
               </h1>
-              <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
                 {t('qr.subtitle')}
               </p>
             </div>
@@ -91,14 +91,14 @@ const QRCode = () => {
           <div className="flex flex-col lg:flex-row gap-12 items-start max-w-6xl mx-auto">
             {/* QR Code Section - Main content */}
             <div className="flex-1 lg:flex-[2] flex justify-center">
-              <Card className="p-8 lg:p-12 gradient-card shadow-card text-center border-0 w-full max-w-xl">
-                <div className="bg-white rounded-2xl p-8 lg:p-12 mb-6">
-                  <QrCode className="w-48 h-48 lg:w-64 lg:h-64 mx-auto text-gray-800" />
+              <Card className="p-6 sm:p-8 lg:p-12 gradient-card shadow-card text-center border-0 w-full max-w-xl">
+                <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-12 mb-6">
+                  <QrCode className="w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 mx-auto text-gray-800" />
                 </div>
-                <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-4">
                   {t('qr.scanTitle')}
                 </h2>
-                <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
+                <p className="text-sm sm:text-base lg:text-lg text-muted-foreground mb-8 leading-relaxed">
                   {t('qr.scanDescription')}
                 </p>
                 <div className="flex gap-4 justify-center flex-wrap">

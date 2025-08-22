@@ -7,24 +7,24 @@ export const Footer = () => {
   const { t } = useLocalization();
   
   return (
-    <footer className="bg-foreground text-white py-16 px-4">
+    <footer className="bg-foreground text-white py-8 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Mission & Purpose */}
           <div className="md:col-span-1">
-            <h3 className="text-3xl font-bold mb-6 gradient-hero bg-clip-text text-transparent">
+            <h3 className="text-xl md:text-2xl font-bold mb-4 gradient-hero bg-clip-text text-transparent">
               UniSign
             </h3>
-            <p className="text-gray-300 mb-6 leading-relaxed text-lg">
+            <p className="text-gray-300 mb-4 leading-relaxed text-sm md:text-base">
               {t('footer.mission')}
             </p>
-            <div className="flex items-center text-gray-300 mb-6">
+            <div className="flex items-center text-gray-300 mb-4">
               <Accessibility className="w-5 h-5 mr-3" />
               <span className="text-sm">{t('footer.accessibility')}</span>
             </div>
             
             {/* Contact Information */}
-            <div className="space-y-3 mb-6">
+            <div className="space-y-2 mb-4">
               <div className="flex items-center text-gray-300 text-sm">
                 <Mail className="w-4 h-4 mr-3 flex-shrink-0" />
                 <span>support@unisign.com</span>
@@ -74,8 +74,8 @@ export const Footer = () => {
 
           {/* Quick Access */}
           <div className="md:col-span-1">
-            <h4 className="text-xl font-semibold mb-6">{t('footer.quickAccess')}</h4>
-            <div className="grid grid-cols-2 gap-6">
+            <h4 className="text-lg font-semibold mb-4">{t('footer.quickAccess')}</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <h5 className="font-medium mb-3 text-white">{t('footer.learn')}</h5>
                 <ul className="space-y-2">
@@ -111,14 +111,14 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 pt-8">
+        <div className="border-t border-gray-700 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center text-gray-300 mb-4 md:mb-0">
               <span>{t('footer.madeWith')}</span>
               <Heart className="w-4 h-4 mx-2 text-red-500 fill-red-500" />
               <span>{t('footer.forCommunity')}</span>
             </div>
-            <div className="text-gray-300 text-sm">
+            <div className="text-gray-300 text-xs">
               {t('footer.copyright')}
             </div>
           </div>

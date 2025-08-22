@@ -3,8 +3,11 @@ import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLocalization } from "@/contexts/LocalizationContext";
 
 const PrivacyPolicy = () => {
+  const { t } = useLocalization();
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -14,35 +17,35 @@ const PrivacyPolicy = () => {
           <div className="mb-12">
             <Link to="/" className="inline-flex items-center text-muted-foreground hover:text-foreground mb-6 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
+              {t('privacy.backHome')}
             </Link>
-            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Privacy Policy
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
+              {t('privacy.title')}
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Last updated: December 2024
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+              {t('privacy.lastUpdated')}
             </p>
           </div>
 
           <div className="space-y-8">
             {/* Introduction */}
-            <Card className="p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Introduction</h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                UniSign ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our sign language learning application and related services.
+            <Card className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-4">{t('privacy.introduction')}</h2>
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
+                {t('privacy.introText1')}
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                By using UniSign, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our application.
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                {t('privacy.introText2')}
               </p>
             </Card>
 
             {/* Information We Collect */}
-            <Card className="p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Information We Collect</h2>
+            <Card className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-4">{t('privacy.infoWeCollect')}</h2>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Personal Information</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-3">{t('privacy.personalInfo')}</h3>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                     <li>Name and email address when you create an account</li>
                     <li>Profile information including learning preferences</li>
@@ -52,7 +55,7 @@ const PrivacyPolicy = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Learning Data</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-3">{t('privacy.learningData')}</h3>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                     <li>Progress tracking and learning achievements</li>
                     <li>Practice session recordings (with your consent)</li>
@@ -62,7 +65,7 @@ const PrivacyPolicy = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Technical Information</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-3">{t('privacy.technicalInfo')}</h3>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                     <li>Device type, operating system, and app version</li>
                     <li>IP address and general location data</li>
@@ -74,8 +77,8 @@ const PrivacyPolicy = () => {
             </Card>
 
             {/* How We Use Information */}
-            <Card className="p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4">How We Use Your Information</h2>
+            <Card className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-4">{t('privacy.howWeUse')}</h2>
               <ul className="list-disc list-inside text-muted-foreground space-y-3 ml-4">
                 <li>Provide and maintain the UniSign learning platform</li>
                 <li>Personalize your learning experience and content recommendations</li>
@@ -88,8 +91,8 @@ const PrivacyPolicy = () => {
             </Card>
 
             {/* Data Sharing */}
-            <Card className="p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Data Sharing and Disclosure</h2>
+            <Card className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-4">{t('privacy.dataSharing')}</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 We do not sell, trade, or rent your personal information to third parties. We may share your information in the following circumstances:
               </p>
@@ -102,8 +105,8 @@ const PrivacyPolicy = () => {
             </Card>
 
             {/* Data Security */}
-            <Card className="p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Data Security</h2>
+            <Card className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-4">{t('privacy.dataSecurity')}</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 We implement appropriate technical and organizational measures to protect your personal information:
               </p>
@@ -117,8 +120,8 @@ const PrivacyPolicy = () => {
             </Card>
 
             {/* Your Rights */}
-            <Card className="p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Your Rights and Choices</h2>
+            <Card className="p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-4">{t('privacy.yourRights')}</h2>
               <div className="space-y-4">
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">Access and Control</h3>
