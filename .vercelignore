@@ -4,7 +4,9 @@ node_modules
 .env
 server/
 shared/
+api/
 client/src/
 *.log
 .git/
 README.md
+DEPLOYMENT.md

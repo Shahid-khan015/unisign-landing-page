@@ -3,19 +3,9 @@
   "outputDirectory": "dist/public",
   "framework": null,
   "installCommand": "npm install",
-  "devCommand": "npm run dev",
-  "functions": {
-    "api/**/*.ts": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
-    },
-    {
-      "source": "/((?!api).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
