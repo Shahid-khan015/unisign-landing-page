@@ -82,6 +82,107 @@ const QRCode = () => {
                 {t('qr.backHome')}
               </Link>
             </div>
+          {/* Download Flow Steps */}
+          <div className="mt-12 sm:mt-16">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">
+                How to Download UniSign
+              </h2>
+              <p className="text-sm sm:text-base lg:text-lg text-white/90 max-w-2xl mx-auto px-4">
+                Follow these 2 simple steps to install the app on your Android device.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+              {/* Step 1 */}
+              <Card className="p-6 sm:p-8 gradient-card shadow-card border-0 relative overflow-hidden">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center text-white font-bold text-lg shadow-hero">
+                    1
+                  </div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    Step 1
+                  </span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
+                  Join the Google Group
+                </h3>
+                <p className="text-sm sm:text-base text-muted-foreground mb-5">
+                  Become a beta tester by joining our official testing group. This is required before installing the app.
+                </p>
+                <a href={GOOGLE_GROUP_URL} target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-primary/5 border border-primary/20 hover:bg-primary/10 transition-colors mb-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg gradient-hero flex items-center justify-center flex-shrink-0">
+                      <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                    </div>
+                    <div className="min-w-0 flex-1 text-left">
+                      <div className="font-semibold text-primary text-sm sm:text-base">Google Group</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground truncate">
+                       
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href={GOOGLE_GROUP_URL} target="_blank" rel="noopener noreferrer">
+                  <Button variant="hero" size="lg" className="w-full">
+                    <Users className="mr-2" />
+                    Join Google Group
+                    <ExternalLink className="ml-2" />
+                  </Button>
+                </a>
+                <div className="flex items-center gap-2 mt-4 text-xs sm:text-sm text-muted-foreground">
+                  <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                  <span>Required before installing the app.</span>
+                </div>
+              </Card>
+
+              {/* Step 2 */}
+              <Card className="p-6 sm:p-8 gradient-card shadow-card border-0 relative overflow-hidden">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center text-white font-bold text-lg shadow-hero">
+                    2
+                  </div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    Step 2
+                  </span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
+                  Open the Play Store Link
+                </h3>
+                <p className="text-sm sm:text-base text-muted-foreground mb-5">
+                  Install UniSign from the Google Play Store and start your sign language learning journey.
+                </p>
+                <div className="flex items-start gap-3 p-3 sm:p-4 rounded-xl bg-amber-50 border border-amber-200 mb-4">
+                  <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-xs sm:text-sm text-amber-900">
+                    <span className="font-semibold text-red-600">Important:</span> Open Play Store using the same email address that joined the Google Group.
+                  </p>
+                </div>
+                <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-primary/5 border border-primary/20 hover:bg-primary/10 transition-colors mb-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white border flex items-center justify-center flex-shrink-0">
+                      <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                    </div>
+                    <div className="min-w-0 flex-1 text-left">
+                      <div className="font-semibold text-primary text-sm sm:text-base">Play Store</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground truncate">
+                       
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer">
+                  <Button variant="hero" size="lg" className="w-full">
+                    <Download className="mr-2" />
+                    Install UniSign
+                    <ExternalLink className="ml-2" />
+                  </Button>
+                </a>
+              </Card>
+            </div>
+          </div>
+
+
             <div className="text-center">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6">
                 {t('qr.title')}
@@ -192,107 +293,6 @@ const QRCode = () => {
               </Card>
             </div>
           </div>
-
-          {/* Download Flow Steps */}
-          <div className="mt-12 sm:mt-16">
-            <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">
-                How to Download UniSign
-              </h2>
-              <p className="text-sm sm:text-base lg:text-lg text-white/90 max-w-2xl mx-auto px-4">
-                Follow these 2 simple steps to install the app on your Android device.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
-              {/* Step 1 */}
-              <Card className="p-6 sm:p-8 gradient-card shadow-card border-0 relative overflow-hidden">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center text-white font-bold text-lg shadow-hero">
-                    1
-                  </div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full">
-                    Step 1
-                  </span>
-                </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
-                  Join the Google Group
-                </h3>
-                <p className="text-sm sm:text-base text-muted-foreground mb-5">
-                  Become a beta tester by joining our official testing group. This is required before installing the app.
-                </p>
-                <a href={GOOGLE_GROUP_URL} target="_blank" rel="noopener noreferrer" className="block">
-                  <div className="flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-primary/5 border border-primary/20 hover:bg-primary/10 transition-colors mb-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg gradient-hero flex items-center justify-center flex-shrink-0">
-                      <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                    </div>
-                    <div className="min-w-0 flex-1 text-left">
-                      <div className="font-semibold text-primary text-sm sm:text-base">Google Group</div>
-                      <div className="text-xs sm:text-sm text-muted-foreground truncate">
-                       
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a href={GOOGLE_GROUP_URL} target="_blank" rel="noopener noreferrer">
-                  <Button variant="hero" size="lg" className="w-full">
-                    <Users className="mr-2" />
-                    Join Google Group
-                    <ExternalLink className="ml-2" />
-                  </Button>
-                </a>
-                <div className="flex items-center gap-2 mt-4 text-xs sm:text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
-                  <span>Required before installing the app.</span>
-                </div>
-              </Card>
-
-              {/* Step 2 */}
-              <Card className="p-6 sm:p-8 gradient-card shadow-card border-0 relative overflow-hidden">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center text-white font-bold text-lg shadow-hero">
-                    2
-                  </div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full">
-                    Step 2
-                  </span>
-                </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
-                  Open the Play Store Link
-                </h3>
-                <p className="text-sm sm:text-base text-muted-foreground mb-5">
-                  Install UniSign from the Google Play Store and start your sign language learning journey.
-                </p>
-                <div className="flex items-start gap-3 p-3 sm:p-4 rounded-xl bg-amber-50 border border-amber-200 mb-4">
-                  <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                  <p className="text-xs sm:text-sm text-amber-900">
-                    <span className="font-semibold text-red-600">Important:</span> Open Play Store using the same email address that joined the Google Group.
-                  </p>
-                </div>
-                <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" className="block">
-                  <div className="flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-primary/5 border border-primary/20 hover:bg-primary/10 transition-colors mb-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white border flex items-center justify-center flex-shrink-0">
-                      <ExternalLink className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-                    </div>
-                    <div className="min-w-0 flex-1 text-left">
-                      <div className="font-semibold text-primary text-sm sm:text-base">Play Store</div>
-                      <div className="text-xs sm:text-sm text-muted-foreground truncate">
-                       
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer">
-                  <Button variant="hero" size="lg" className="w-full">
-                    <Download className="mr-2" />
-                    Install UniSign
-                    <ExternalLink className="ml-2" />
-                  </Button>
-                </a>
-              </Card>
-            </div>
-          </div>
-
 
 
           {/* Additional Info */}
