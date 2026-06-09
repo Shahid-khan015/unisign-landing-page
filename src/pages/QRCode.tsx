@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Smartphone, ArrowLeft, Share2, Copy, Check, Users, ExternalLink, AlertTriangle } from "lucide-react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useLocalization } from "@/contexts/LocalizationContext";
