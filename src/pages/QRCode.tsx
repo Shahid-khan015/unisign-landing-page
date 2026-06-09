@@ -229,7 +229,7 @@ const QRCode = () => {
                     <div className="min-w-0 flex-1 text-left">
                       <div className="font-semibold text-primary text-sm sm:text-base">Google Group</div>
                       <div className="text-xs sm:text-sm text-muted-foreground truncate">
-                        groups.google.com/g/unisign09/
+                       
                       </div>
                     </div>
                   </div>
@@ -277,7 +277,7 @@ const QRCode = () => {
                     <div className="min-w-0 flex-1 text-left">
                       <div className="font-semibold text-primary text-sm sm:text-base">Play Store</div>
                       <div className="text-xs sm:text-sm text-muted-foreground truncate">
-                        play.google.com/store/apps/details?id=com.unisign.app
+                       
                       </div>
                     </div>
                   </div>
