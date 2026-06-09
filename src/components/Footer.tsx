@@ -42,7 +42,7 @@ export const Footer = () => {
               variant="ghost" 
               size="sm" 
               className="text-gray-300 hover:text-white hover:bg-white/10 h-7 w-7 sm:h-8 sm:w-8 p-1"
-              onClick={() => window.open('https://facebook.com/unisign', '_blank')}
+              onClick={() => window.open('https://facebook.com/', '_blank')}
             >
               <Facebook className="w-3 h-3 sm:w-4 sm:h-4" />
             </Button>
@@ -50,7 +50,7 @@ export const Footer = () => {
               variant="ghost" 
               size="sm" 
               className="text-gray-300 hover:text-white hover:bg-white/10 h-7 w-7 sm:h-8 sm:w-8 p-1"
-              onClick={() => window.open('https://twitter.com/unisign', '_blank')}
+              onClick={() => window.open('https://twitter.com/', '_blank')}
             >
               <Twitter className="w-3 h-3 sm:w-4 sm:h-4" />
             </Button>
@@ -58,7 +58,7 @@ export const Footer = () => {
               variant="ghost" 
               size="sm" 
               className="text-gray-300 hover:text-white hover:bg-white/10 h-7 w-7 sm:h-8 sm:w-8 p-1"
-              onClick={() => window.open('https://instagram.com/unisign', '_blank')}
+              onClick={() => window.open('https://www.instagram.com/unisign_edu?igsh=NmtqaWxmbHdleG43', '_blank')}
             >
               <Instagram className="w-3 h-3 sm:w-4 sm:h-4" />
             </Button>
@@ -66,7 +66,7 @@ export const Footer = () => {
               variant="ghost" 
               size="sm" 
               className="text-gray-300 hover:text-white hover:bg-white/10 h-7 w-7 sm:h-8 sm:w-8 p-1"
-              onClick={() => window.open('https://linkedin.com/company/unisign', '_blank')}
+              onClick={() => window.open('https://linkedin.com/', '_blank')}
             >
               <Linkedin className="w-3 h-3 sm:w-4 sm:h-4" />
             </Button>
