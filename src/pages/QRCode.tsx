@@ -20,7 +20,7 @@ const QRCode = () => {
   const handleCopyLink = async () => {
     try {
       const currentUrl = window.location.href;
-      await navigator.clipboard.writeText(currentUrl);
+      await navigator.clipboard.writeText(PLAY_STORE_URL);
       setCopied(true);
       toast({
         title: t('qr.copied'),
