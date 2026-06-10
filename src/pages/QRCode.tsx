@@ -13,7 +13,7 @@ import {
   QrCode as QrCodeIcon,
 } from "lucide-react";
 
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { useLocalization } from "@/contexts/LocalizationContext";
 import unisignQr from "@/assets/unisign-qr.png";
